@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-surface: #0b1326;
+    --color-surface-dim: #0b1326;
+    --color-surface-bright: #31394d;
+    --color-surface-container-lowest: #060e20;
+    --color-surface-container-low: #131b2e;
+    --color-surface-container: #171f33;
+    --color-surface-container-high: #222a3d;
+    --color-surface-container-highest: #2d3449;
+    --color-surface-variant: #2d3449;
+    --color-on-surface: #dae2fd;
+    --color-on-surface-variant: #c3c6d7;
+    --color-primary: #b4c5ff;
+    --color-on-primary: #002a78;
+    --color-primary-container: #2563eb;
+    --color-on-primary-container: #eeefff;
+    --color-primary-fixed: #dbe1ff;
+    --color-secondary: #ffb95f;
+    --color-on-secondary: #472a00;
+    --color-secondary-container: #ee9800;
+    --color-secondary-fixed: #ffddb8;
+    --color-tertiary: #4edea3;
+    --color-on-tertiary: #003824;
+    --color-tertiary-container: #007d55;
+    --color-tertiary-fixed: #6ffbbe;
+    --color-outline: #8d90a0;
+    --color-outline-variant: #434655;
+    --color-error: #ffb4ab;
+    --color-error-container: #93000a;
+  }
+
+  html, body {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-color: #0b1326;
+    color: #dae2fd;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    overscroll-behavior-y: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-headline {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+/* Custom utility colors mapped to match design system classes */
+.bg-surface { background-color: #0b1326; }
+.bg-surface-dim { background-color: #0b1326; }
+.bg-surface-bright { background-color: #31394d; }
+.bg-surface-container-lowest { background-color: #060e20; }
+.bg-surface-container-low { background-color: #131b2e; }
+.bg-surface-container { background-color: #171f33; }
+.bg-surface-container-high { background-color: #222a3d; }
+.bg-surface-container-highest { background-color: #2d3449; }
+.bg-surface-variant { background-color: #2d3449; }
+
+.text-surface { color: #0b1326; }
+.text-on-surface { color: #dae2fd; }
+.text-on-surface-variant { color: #c3c6d7; }
+
+.bg-primary { background-color: #b4c5ff; }
+.text-primary { color: #b4c5ff; }
+.bg-primary-container { background-color: #2563eb; }
+.text-primary-container { color: #2563eb; }
+.text-on-primary { color: #002a78; }
+.text-on-primary-container { color: #eeefff; }
+.bg-primary-fixed { background-color: #dbe1ff; }
+.text-primary-fixed { color: #dbe1ff; }
+
+.bg-secondary { background-color: #ffb95f; }
+.text-secondary { color: #ffb95f; }
+.bg-secondary-container { background-color: #ee9800; }
+.text-secondary-container { color: #ee9800; }
+.text-on-secondary { color: #472a00; }
+.text-on-secondary-container { color: #5b3800; }
+
+.bg-tertiary { background-color: #4edea3; }
+.text-tertiary { color: #4edea3; }
+.bg-tertiary-container { background-color: #007d55; }
+.text-tertiary-container { color: #007d55; }
+.text-on-tertiary { color: #003824; }
+.text-on-tertiary-container { color: #bdffdb; }
+
+.text-outline { color: #8d90a0; }
+.text-outline-variant { color: #434655; }
+.border-outline { border-color: #8d90a0; }
+.border-outline-variant { border-color: #434655; }
+
+.bg-error { background-color: #ffb4ab; }
+.text-error { color: #ffb4ab; }
+.bg-error-container { background-color: #93000a; }
+
+.font-label-sm { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; }
+.font-label-md { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 600; }
+.font-headline-sm { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 600; }
+.font-headline-md { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; }
+.font-headline-lg { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; }
+.font-body-sm { font-family: 'Inter', sans-serif; font-size: 0.875rem; }
+.font-body-md { font-family: 'Inter', sans-serif; font-size: 1rem; }
+.font-caption { font-family: 'Inter', sans-serif; font-size: 0.75rem; }
+
+.pb-safe { padding-bottom: max(env(safe-area-inset-bottom, 0px), 12px); }
+.pt-safe { padding-top: max(env(safe-area-inset-top, 0px), 0px); }
+
+/* Material symbols */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+  display: inline-block;
+  user-select: none;
+}
+.material-symbols-outlined.fill {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Hide scrollbar */
+.no-scrollbar::-webkit-scrollbar,
+::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Teacher Éric Community",
+  "description": "Comunidade interativa de aprendizagem de inglês com Teacher Éric, canais de conversação, AI English Tutor com feedback estruturado, conteúdos didáticos e perfis de alunos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
